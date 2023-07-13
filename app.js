@@ -8,7 +8,7 @@ addBtn.addEventListener("click", function (e) {
     let addTitle = document.getElementById("addTitle");
     let addTxt = document.getElementById("addText");
     let notes = localStorage.getItem("notes");
-    if(addTxt.textContent==''){
+    if(addTxt.textLength==0){
         alert("Please write something.")
     }else{
         if (notes == null) {
